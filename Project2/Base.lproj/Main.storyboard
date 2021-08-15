@@ -16,36 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ty0-fK-CsB">
-                                <rect key="frame" x="107" y="229" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-i7-BlS">
-                                <rect key="frame" x="107" y="362" width="200" height="100"/>
-                                <state key="normal" image="us"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFa-LN-kbA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFa-LN-kbA">
                                 <rect key="frame" x="107" y="101" width="200" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypU-G0-dwK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-i7-BlS">
+                                <rect key="frame" x="107" y="398" width="200" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igu-xZ-c5K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ty0-fK-CsB">
+                                <rect key="frame" x="107" y="247" width="200" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tdb-du-dQQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="89N-i7-BlS" firstAttribute="firstBaseline" secondItem="ty0-fK-CsB" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="DQZ-HG-y0Y"/>
-                            <constraint firstItem="SFa-LN-kbA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="JzF-lg-d4t"/>
-                            <constraint firstItem="ty0-fK-CsB" firstAttribute="firstBaseline" secondItem="SFa-LN-kbA" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="Nhl-kS-tpy"/>
-                            <constraint firstItem="SFa-LN-kbA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="RwD-iD-GtA"/>
-                            <constraint firstItem="ty0-fK-CsB" firstAttribute="firstBaseline" secondItem="SFa-LN-kbA" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="nF3-m5-xqM"/>
-                            <constraint firstItem="ty0-fK-CsB" firstAttribute="centerX" secondItem="89N-i7-BlS" secondAttribute="centerX" id="tf0-BZ-TaA"/>
-                            <constraint firstItem="ty0-fK-CsB" firstAttribute="centerX" secondItem="SFa-LN-kbA" secondAttribute="centerX" id="txa-9Y-Q8t"/>
-                            <constraint firstItem="89N-i7-BlS" firstAttribute="top" secondItem="ty0-fK-CsB" secondAttribute="bottom" constant="30" id="wlx-K7-KE7"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EvR-Rm-jDm"/>
                     <connections>
                         <outlet property="button1" destination="SFa-LN-kbA" id="i51-8X-0Q1"/>
-                        <outlet property="button2" destination="ty0-fK-CsB" id="iSt-LZ-qWJ"/>
+                        <outlet property="button2" destination="ty0-fK-CsB" id="vnb-m0-yOt"/>
                         <outlet property="button3" destination="89N-i7-BlS" id="dFs-Jd-8Zm"/>
                     </connections>
                 </viewController>
