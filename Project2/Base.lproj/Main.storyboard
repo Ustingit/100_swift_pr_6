@@ -16,25 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFa-LN-kbA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFa-LN-kbA">
                                 <rect key="frame" x="107" y="101" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SFa-LN-kbA" secondAttribute="height" multiplier="2:1" id="e4a-dt-bAy"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypU-G0-dwK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-i7-BlS">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89N-i7-BlS">
                                 <rect key="frame" x="107" y="398" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="89N-i7-BlS" secondAttribute="height" multiplier="2:1" id="Eq5-Q3-vH2"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igu-xZ-c5K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ty0-fK-CsB">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ty0-fK-CsB">
                                 <rect key="frame" x="107" y="247" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ty0-fK-CsB" secondAttribute="height" multiplier="2:1" id="aDU-Gq-VzC"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tdb-du-dQQ"/>
@@ -43,6 +49,17 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="89N-i7-BlS" secondAttribute="bottom" constant="20" id="0Rc-2Z-wjB"/>
+                            <constraint firstItem="SFa-LN-kbA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Ea-nC-wzG"/>
+                            <constraint firstItem="ty0-fK-CsB" firstAttribute="height" secondItem="SFa-LN-kbA" secondAttribute="height" id="37X-LO-e79"/>
+                            <constraint firstItem="89N-i7-BlS" firstAttribute="height" secondItem="ty0-fK-CsB" secondAttribute="height" id="Gdq-QX-0zU"/>
+                            <constraint firstItem="ty0-fK-CsB" firstAttribute="centerX" secondItem="SFa-LN-kbA" secondAttribute="centerX" id="LZU-Gc-9bo"/>
+                            <constraint firstItem="89N-i7-BlS" firstAttribute="top" secondItem="ty0-fK-CsB" secondAttribute="bottom" constant="51" id="ch8-CK-yvb"/>
+                            <constraint firstItem="ty0-fK-CsB" firstAttribute="top" secondItem="SFa-LN-kbA" secondAttribute="bottom" constant="46" id="g7b-K7-MTC"/>
+                            <constraint firstItem="89N-i7-BlS" firstAttribute="centerX" secondItem="ty0-fK-CsB" secondAttribute="centerX" id="jt6-rC-4SY"/>
+                            <constraint firstItem="SFa-LN-kbA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="vb5-re-0YE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EvR-Rm-jDm"/>
                     <connections>
